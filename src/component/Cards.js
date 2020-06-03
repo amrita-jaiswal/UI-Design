@@ -18,6 +18,12 @@ const useStyles = makeStyles({
         boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
         marginBottom: 40
     },
+    img: {
+        margin: 'auto',
+        display: 'block',
+        maxWidth: '100%',
+        // maxHeight: '100%',
+    },
 
 });
 
@@ -27,47 +33,46 @@ export default function Cards() {
     return (
         <Grid container>
             <Card className={classes.root}>
-            <CardActionArea>
-                <CardContent>
-                    <img src={require("../Assets/Avatar 2@2x.png")} alt="avatar" />
-                    <Typography
-                        gutterBottom
-                        component="h2"
-                        style={{ fontWeight: "bold", color: "black" }}
-                    >
-                        Space for a longer title to display here
+                    <CardContent>
+                        <img src={require("../Assets/Avatar 2@2x.png")} alt="avatar" />
+                        <Typography
+                            gutterBottom
+                            component="h2"
+                            style={{ fontWeight: "bold", color: "black" }}
+                        >
+                            Space for a longer title to display here
           </Typography>
-                    <Typography variant="body2" color="textSecondary" component="p">
-                        Space for some sub-copy to display here.
+                        <Typography variant="body2" color="textSecondary" component="p">
+                            Space for some sub-copy to display here.
           </Typography>
-                    <br />
-                    <Typography
-                        gutterBottom
-                        component="h1"
-                        style={{ fontWeight: "bold", color: "black", fontSize: 20 }}
-                    >
-                        $999/month
+                        <br />
+                        <Typography
+                            gutterBottom
+                            component="h1"
+                            style={{ fontWeight: "bold", color: "black", fontSize: 20 }}
+                        >
+                            $999/month
           </Typography>
-                </CardContent>
-                </CardActionArea>
+                    </CardContent>
                 <CardActionArea>
-                    <img
-                        className="img-responsive"
-                        id="image1"
-                        src={require("../Assets/Photo 2@3x.png")}
-                        height="380px"
-                        alt="nature"
-                        onClick={() => window.open("https://drive.google.com/file/d/16baBuhJJi65A-F-c4QVW2QFcg944Idu6/view?usp=sharing", '_blank')}
-                        style={{
-                            // maxHeight: 380,
-                            marginLeft: 48,
-                            marginTop: -9,
-                            position: 'relative',
-                            cursor: 'pointer'
-                        }}
-                    />
-
-                    <CheckCircleIcon color="action" style={{ position: 'relative', top: -354, left: 292 }} />
+                    <Grid container>
+                        <img
+                            className={classes.img}
+                            src={require("../Assets/Photo 2@3x.png")}
+                            height="380px"
+                            alt="nature"
+                            onClick={() => window.open("https://drive.google.com/file/d/16baBuhJJi65A-F-c4QVW2QFcg944Idu6/view?usp=sharing", '_blank')}
+                            style={{
+                                marginLeft: 12,
+                                marginTop: -9,
+                                position: 'relative',
+                                cursor: 'pointer'
+                            }}
+                        />
+                    </Grid>
+                  <Grid item>  
+                    <CheckCircleIcon color="action" style={{ position: 'relative', top: -354, left: "86%" }} />
+                 </Grid>   
                 </CardActionArea>
             </Card>
 
@@ -97,20 +102,21 @@ export default function Cards() {
           </Typography>
                 </CardContent>
                 <CardActionArea>
-                    <img 
-                        className="img-responsive"
-                        src={require("../Assets/Photo 3@3x.png")}
-                        alt="nature"
-                        style={{
-                            maxHeight: 380,
-                            marginLeft: 48,
-                            marginTop: -9,
-                            position: 'relative',
-                        }}
-                    />
-                    <CheckCircleIcon style={{ position: 'relative', top: -354, left: 292, color: "#fff" }} />
-          />
-        </CardActionArea>
+                    <Grid container>
+                        <img
+                            className={classes.img}
+                            src={require("../Assets/Photo 3@3x.png")}
+                            alt="nature"
+                            height="380px"
+                            style={{
+                                marginLeft: 12,
+                                marginTop: -9,
+                                position: 'relative',
+                            }}
+                        />
+                    </Grid>
+                    <CheckCircleIcon style={{ position: 'relative', top: -354, left: "86%", color: "#fff" }} />
+                </CardActionArea>
             </Card>
 
             <br />
@@ -139,18 +145,20 @@ export default function Cards() {
           </Typography>
                 </CardContent>
                 <CardActionArea>
-                    <img
-                        className="img-responsive"
-                        src={require("../Assets/Photo 1@3x.png")}
-                        alt="nature"
-                        style={{
-                            maxHeight: 380,
-                            marginLeft: 48,
-                            marginTop: -9,
-                            position: 'relative',
-                        }}
-                    />
-                    <CheckCircleIcon color="action" style={{ position: 'relative', top: -354, left: 292 }} />
+                    <Grid container>
+                        <img
+                            className={classes.img}
+                            src={require("../Assets/Photo 1@3x.png")}
+                            alt="nature"
+                            height="380px"
+                            style={{
+                                marginLeft: 12,
+                                marginTop: -9,
+                                position: 'relative',
+                            }}
+                        />
+                    </Grid>
+                    <CheckCircleIcon color="action" style={{ position: 'relative', top: -354, left: "86%" }} />
                 </CardActionArea>
             </Card>
         </Grid>

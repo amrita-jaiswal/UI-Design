@@ -5,11 +5,12 @@ import path from "../Assets/path.svg";
 import ScrollableTabsButtonPrevent from "./tab.js";
 import MenuIcon from "@material-ui/icons/Menu";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
+import "./index.css";
 
 class Header extends Component {
     render() {
         return (
-            <Container maxWidth="sm">
+            <Container id="contain" maxWidth="sm">
                 <Typography
                     component="div"
                     style={{ backgroundColor: "#3DA8FF", height: 92, maxWidth: "100%" }}
@@ -25,7 +26,7 @@ class Header extends Component {
                         height: 50
                     }}
                 />
-                    <MoreVertIcon style={{ position: "relative", top: -25, right:"-45vh", color: '#1E5A9C' }} />
+                    <MoreVertIcon id="icon" style={{ position: "relative", top: -25, right:"-91%", color: '#1E5A9C' }} />
                </Typography>     
                 <Grid container>
                     <MenuIcon style={{
