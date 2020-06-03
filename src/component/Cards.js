@@ -6,8 +6,6 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
-import CardMedia from '@material-ui/core/CardMedia';
-import "./index.css";
 
 const useStyles = makeStyles({
     root: {
@@ -54,6 +52,7 @@ export default function Cards() {
                 </CardActionArea>
                 <CardActionArea>
                     <img
+                        className="img-responsive"
                         id="image1"
                         src={require("../Assets/Photo 2@3x.png")}
                         height="380px"
@@ -98,7 +97,8 @@ export default function Cards() {
           </Typography>
                 </CardContent>
                 <CardActionArea>
-                    <img
+                    <img 
+                        className="img-responsive"
                         src={require("../Assets/Photo 3@3x.png")}
                         alt="nature"
                         style={{
@@ -140,6 +140,7 @@ export default function Cards() {
                 </CardContent>
                 <CardActionArea>
                     <img
+                        className="img-responsive"
                         src={require("../Assets/Photo 1@3x.png")}
                         alt="nature"
                         style={{

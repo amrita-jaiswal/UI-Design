@@ -5,7 +5,6 @@ import path from "../Assets/path.svg";
 import ScrollableTabsButtonPrevent from "./tab.js";
 import MenuIcon from "@material-ui/icons/Menu";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
-import "./index.css";
 
 class Header extends Component {
     render() {

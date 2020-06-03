@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Grid } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
-import "./index.css";
 
 
 class Body extends Component {
