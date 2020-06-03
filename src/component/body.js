@@ -8,7 +8,10 @@ class Body extends Component {
     render() {
         return (
             <>
-                <Grid style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around' }}>
+                <Grid style={{ display: 'flex', 
+                               flexDirection: 'row', 
+                            //    justifyContent: 'space-around'
+                                }}>
                     <Grid
                         style={{
                             width: 90,
@@ -20,6 +23,7 @@ class Body extends Component {
                             textAlign: "center",
                             paddingTop: 5,
                             paddingRight: 10,
+                            marginRight:13,
                         }}
                     >
                         Tagone
@@ -45,6 +49,8 @@ class Body extends Component {
                             textAlign: "center",
                             paddingTop: 5,
                             paddingRight: 10,
+                            marginRight:13,
+
                         }}
                     >
                         Tagtwo
@@ -70,6 +76,8 @@ class Body extends Component {
                             textAlign: "center",
                             paddingTop: 5,
                             paddingRight: 10,
+                            marginRight:13,
+
                         }}
                     >
                         Tagthree

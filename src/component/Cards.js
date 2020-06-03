@@ -6,6 +6,7 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
+import CardMedia from '@material-ui/core/CardMedia';
 import "./index.css";
 
 const useStyles = makeStyles({
@@ -28,6 +29,7 @@ export default function Cards() {
     return (
         <Grid container>
             <Card className={classes.root}>
+            <CardActionArea>
                 <CardContent>
                     <img src={require("../Assets/Avatar 2@2x.png")} alt="avatar" />
                     <Typography
@@ -49,7 +51,8 @@ export default function Cards() {
                         $999/month
           </Typography>
                 </CardContent>
-                <CardActionArea className="col-sm-4">
+                </CardActionArea>
+                <CardActionArea>
                     <img
                         id="image1"
                         src={require("../Assets/Photo 2@3x.png")}
@@ -65,7 +68,7 @@ export default function Cards() {
                         }}
                     />
 
-                    <CheckCircleIcon color="action" style={{ position: 'relative', top: -344, left: 274 }} />
+                    <CheckCircleIcon color="action" style={{ position: 'relative', top: -354, left: 292 }} />
                 </CardActionArea>
             </Card>
 
@@ -105,7 +108,7 @@ export default function Cards() {
                             position: 'relative',
                         }}
                     />
-                    <CheckCircleIcon style={{ position: 'relative', top: -344, left: 274, color: "#fff" }} />
+                    <CheckCircleIcon style={{ position: 'relative', top: -354, left: 292, color: "#fff" }} />
           />
         </CardActionArea>
             </Card>
@@ -146,7 +149,7 @@ export default function Cards() {
                             position: 'relative',
                         }}
                     />
-                    <CheckCircleIcon color="action" style={{ position: 'relative', top: -344, left: 274 }} />
+                    <CheckCircleIcon color="action" style={{ position: 'relative', top: -354, left: 292 }} />
                 </CardActionArea>
             </Card>
         </Grid>

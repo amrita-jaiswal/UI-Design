@@ -7,7 +7,6 @@ import MenuIcon from "@material-ui/icons/Menu";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import "./index.css";
 
-
 class Header extends Component {
     render() {
         return (
@@ -23,7 +22,7 @@ class Header extends Component {
                         position: "relative",
                         display: 'block',
                         margin: '0 auto',
-                        top: 11,
+                        top: 18,
                         height: 50
                     }}
                 />
@@ -36,24 +35,7 @@ class Header extends Component {
                         paddingLeft: 13,
                         color: "#4b4552"
                     }} />
-                    {/* <MenuIcon style={{
-                        position: "absolute",
-                        top: 37,
-                        paddingLeft: 30,
-                        color: "#4b4552"
-                    }} />
-                    <MenuIcon style={{
-                        position: "absolute",
-                        top: 47,
-                        paddingLeft: 48,
-                        color: "#4b4552"
-                    }} /> */}
-
-                    {/* <MenuIcon style={{ position: "absolute", top: 23, paddingLeft: 86, color: "#611E9C" }} /> */}
                 </Grid>
-                     
-
-                
                 <ScrollableTabsButtonPrevent />
             </Container>
         );
